@@ -1,0 +1,62 @@
+@layer components{
+
+
+        .navbar {
+            @apply py-0 px-0 fixed z-[1000] w-full flex flex-wrap items-center justify-between lg:flex-nowrap lg:justify-start;
+
+            &-expand-lg {
+                @apply lg:flex-nowrap lg:justify-start 
+            }
+
+            &-brand {
+                @apply block font-medium py-4 px-4 max-w-52
+                /* min-w-24 w-40 */
+            }
+
+            &-toggler {
+                @apply absolute right-5 -bottom-5 sm:right-0 sm:bottom-1 block w-12 h-8 rounded-lg ring-primary focus:ring-2 lg:hidden;
+                /* px-3 py-1.5 */
+                &-icon{
+                    @apply relative mx-auto my-[2px] block h-[3px] w-[21px] bg-secondary-light
+                }
+            }
+
+
+            &-collapse {
+                @apply hidden w-full max-w-[250px] lg:max-w-[740px] absolute top-full right-4 rounded-lg bg-white py-5 shadow-lg lg:block lg:relative 
+                lg:bg-transparent lg:py-0 lg:shadow-none;
+                /* lg:block lg:w-full lg:max-w-fit  */
+            }
+
+            &-collapse.show {
+                @apply block;
+            }
+            
+
+            &-nav {
+                @apply block w-full list-none mx-auto lg:flex;
+            }
+
+
+        }
+
+        .nav-item {
+            @apply relative ml-auto;
+            
+            .nav-link {
+                @apply flex text-nowrap mx-8 py-2 text-base font-medium text-secondary-light hover:text-secondary
+                lg:mx-0 lg:inline-flex lg:px-0 lg:text-secondary-light lg:hover:text-secondary;
+
+
+                .active {
+                     @apply text-secondary-light
+                }
+
+            }
+        }
+
+        .nav-buttons {
+            @apply hidden pl-4 pr-16 sm:flex lg:transform-none lg:px-0;
+        }
+    }   
+    

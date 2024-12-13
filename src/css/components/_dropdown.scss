@@ -1,0 +1,31 @@
+@layer components {
+    .dropdown {
+        @apply relative;
+
+        .nav-link.show {
+            @apply hidden top-full left-0 mt-2 text-gray-500 lg:absolute
+        }
+
+        &-toggle {
+            @apply whitespace-nowrap after:inline-block after:ml-1 after:align-[4px] after:content-none after:border-t-[0.3em] after:border-solid after:border-r-[0.3em] after:border-r-transparent after:border-b-0 after:border-b-current after:border-l-[0.3em] after:border-l-transparent;
+
+        }
+
+        &-menu {
+            @apply static hidden z-[1000] min-w-52 px-4 py-1 lg:p-4 text-base text-gray-500 bg-light
+            text-left list-none bg-clip-padding rounded-sm  border-solid border-light border top-full left-0  lg:absolute transition-all delay-300
+        }
+
+        &-item {
+            @apply block rounded px-6 py-1 lg:py-2.5 text-sm hover:text-secondary-light text-gray-500
+        }
+
+        .dropdown-menu.show {
+            @apply block
+        }
+
+        .dropdown-menu.show-enter {
+            @apply lg:block
+        }
+    }
+}

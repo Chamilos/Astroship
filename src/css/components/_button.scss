@@ -1,0 +1,31 @@
+@layer components {
+
+    .btn {
+        @apply inline-flex transition duration-300 ease-in-out hover:bg-opacity-100  text-base text-center justify-center items-center border font-medium px-4 py-2 rounded;
+
+        &-primary {
+            @apply bg-primary text-secondary border-primary hover:bg-primary-dark
+        }
+
+        &-bordless {
+            @apply bg-transparent text-secondary hover:text-secondary border-0
+        }
+
+        &-light {
+            @apply bg-white text-dark shadow-sm hover:bg-[#F3F4F6] hover:text-gray-500 
+        }
+
+        &-secondary {
+            @apply bg-secondary text-primary hover:bg-gray-800 hover:text-primary border-0
+        }
+
+        &-success {
+            @apply bg-success text-white border-success hover:bg-opacity-80 hover:border-primary
+        }
+
+        &-lg {
+            @apply px-7 py-[14px]
+        }
+    }
+}
+
