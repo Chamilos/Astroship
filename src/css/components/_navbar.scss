@@ -22,14 +22,31 @@
             }
 
 
-            &-collapse {
+            &-collapse-lg {
                 @apply hidden w-full max-w-[250px] lg:max-w-[740px] absolute top-full right-4 rounded-lg bg-white py-5 shadow-lg lg:block lg:relative 
                 lg:bg-transparent lg:py-0 lg:shadow-none;
-                /* lg:block lg:w-full lg:max-w-fit  */
+                
             }
 
+            &-collapse {
+                @apply hidden;
+            }
+
+
             &-collapse.show {
-                @apply block;
+                @apply flex flex-col w-full h-dvh absolute top-16 bottom-0 left-0 right-0 z-10 rounded-none border bg-white px-4 py-5 shadow-lg lg:hidden;
+
+                .navbar-nav {
+                    @apply h-3/4
+                }
+
+                .nav-item {
+                    @apply h-1/6 border-b border-primary-dark
+                }
+
+                .nav-link {
+                    @apply w-full h-full flex items-center
+                }
             }
             
 

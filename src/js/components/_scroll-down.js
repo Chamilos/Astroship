@@ -14,18 +14,18 @@ window.addEventListener("scroll", ()=> {
             scroll.classList.add("style-change");
         });
 
-        // Logo
-        logoWhite.forEach((path) => {
-            path.classList.add("hidden")
-        });
-        logoBlue.forEach((path) => {
-            path.classList.remove("hidden")
-        });
+        // Logo Shiw/Hide
+        // logoWhite.forEach((path) => {
+        //     path.classList.add("hidden")
+        // });
+        // logoBlue.forEach((path) => {
+        //     path.classList.remove("hidden")
+        // });
 
 
-        // Buttons
-        buttonScroll.classList.remove("btn-secondary");
-        buttonScroll.classList.add("btn-primary");
+        // Button Change on scroll primary-secondary
+        // buttonScroll.classList.remove("btn-secondary");
+        // buttonScroll.classList.add("btn-primary");
 
 
         // if(window.scrollY === 0) 
@@ -37,17 +37,17 @@ window.addEventListener("scroll", ()=> {
             scroll.classList.remove("style-change");
         });
 
-        // Logo
-        logoWhite.forEach((path) => {
-            path.classList.remove("hidden")
-        });
-        logoBlue.forEach((path)=>{
-            path.classList.add("hidden")
-        });
+        // Logo Show/Hide
+        // logoWhite.forEach((path) => {
+        //     path.classList.remove("hidden")
+        // });
+        // logoBlue.forEach((path)=>{
+        //     path.classList.add("hidden")
+        // });
 
-        // Buttons
-        buttonScroll.classList.remove("btn-primary");
-        buttonScroll.classList.add("btn-secondary");
+        // Button Change on scroll primary-secondary
+        // buttonScroll.classList.remove("btn-primary");
+        // buttonScroll.classList.add("btn-secondary");
     };
 });
 

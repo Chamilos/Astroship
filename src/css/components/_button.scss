@@ -4,7 +4,7 @@
         @apply inline-flex transition duration-300 ease-in-out hover:bg-opacity-100  text-base text-center justify-center items-center border font-medium px-4 py-2 rounded;
 
         &-primary {
-            @apply bg-primary text-secondary border-primary hover:bg-primary-dark
+            @apply bg-primary text-secondary border-secondary hover:bg-primary-dark
         }
 
         &-bordless {

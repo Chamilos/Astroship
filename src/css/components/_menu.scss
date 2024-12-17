@@ -1,0 +1,40 @@
+@layer components {
+    .nav-level-2 {
+       @apply hidden w-full h-dvh absolute top-16 bottom-0 left-0 right-0 z-20 border bg-white py-6 sm:py-8 md:py-10 shadow-lg lg:hidden;
+
+       .content-level-2{
+        @apply hidden flex-col w-full space-y-6;
+
+        .menu-nav {
+            @apply h-3/4 overflow-hidden
+        }
+
+        .menu-item {
+            @apply border-b z-50 border-primary-dark transition duration-500 ease-in;
+
+            .drop-menu {
+                @apply flex flex-col w-full overflow-hidden transition duration-500 ease-in bg-primary-dark;
+
+                &-items {
+                    @apply text-base text-secondary hover:text-primary px-4 py-3
+                }
+            }
+        }
+
+        .menu-link {
+            @apply w-full h-full flex px-8 py-6 items-center justify-between cursor-pointer;
+        }
+       }
+    }
+    .nav-level-2.show {
+        @apply flex;
+
+        .content-level-2.show {
+            @apply flex;
+           }
+    }
+
+    .arrow-rotation {
+        @apply transition duration-500 ease-in
+    }
+}
