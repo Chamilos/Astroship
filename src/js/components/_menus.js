@@ -1,11 +1,12 @@
 // Mobile Menus level_1 - level_2 - level_3
-const menulvl = document.querySelectorAll("[data-menu-level]");
+// const menulvl = document.querySelectorAll("[data-menu-level]");
 const menuId = document.querySelectorAll("[data-menu-id]");
-const burgerButton = document.getElementById('collapse');
 
 
 menuId.forEach((target) => {
     
+    const burgerButton = document.getElementById('collapse');
+
     target.addEventListener("click", () => {
         const valueMenuLvl = target.getAttribute("data-menu-level");
         const valueMenuId = target.getAttribute("data-menu-id");

@@ -198,9 +198,30 @@
                 </div>
               </a>
             </li>
-            <!-- level 1 -->
+            <!-- level 1 to level 2 -->
             <li class="nav-item group">
-              <a href="#" class="nav-link">Blog</a>
+              <a
+                id="blog"
+                data-menu-level="level-2"
+                data-menu-id="blog-level-2"
+                class="nav-link relative"
+                role="button"
+                ><span>Blog</span>
+                <div class="-rotate-90 ml-2 fill-current">
+                  <!-- Right Arrow -->
+                  <svg
+                    width="16"
+                    height="20"
+                    viewBox="0 0 16 20"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
             </li>
 <!-- level 1 to level 2 -->
 <li class="nav-item group">
@@ -286,7 +307,7 @@
                   </div>
                 </div>
                 <!-- Tab Inner Content -->
-                <div class="drop-menu group-focus:max-h-screen max-h-0">
+                <div class="drop-menu group-active:max-h-screen active:max-h-screen max-h-0">
                   <a class="drop-menu-items" href="#">
                     <span>A section</span></a>
                   <a class="drop-menu-items" href="#">B section</a>
@@ -559,6 +580,109 @@
               </div>
             </div>
           </div>
+
+                    <!-- Blog-level-2 -->
+                    <div id="blog-level-2" class="content-level-2">
+                      <div class="mx-4">
+                      <button
+                        data-menu-id="blog-level-2"
+                        data-menu-level="level-2"
+                        class="btn btn-primary border-none"
+                      >
+                        <span>&#10094;</span>Blog
+                      </button>
+                      </div>
+                      <!-- Level 3 Hidden -->
+                      <div class="menu-nav">
+                        <!-- Tab 1 -->
+                        <div class="menu-item h-auto group" tabindex="0">
+                          <!-- Tab button -->
+                          <div class="menu-link" id="menu-collapse">
+                            <div class="font-bold text-lg text-secondary-light">About Contents</div>
+                            <div
+                              class="fill-current arrow-rotation group-focus:-rotate-180"
+                            >
+                              <!-- Down Arrow -->
+                              <svg
+                                width="16"
+                                height="20"
+                                viewBox="0 0 16 20"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <!-- Tab Inner Content -->
+                          <div class="drop-menu group-focus:max-h-screen max-h-0">
+                            <a class="drop-menu-items" href="#">A section</a>
+                            <a class="drop-menu-items" href="#">B section</a>
+                            <a class="drop-menu-items" href="#">C section</a>
+                          </div>
+                        </div>
+                        <!-- Tab 2 -->
+                        <div class="menu-item h-auto group" tabindex="0">
+                          <!-- Tab button -->
+                          <div class="menu-link" id="menu-collapse">
+                            <div class="font-bold text-lg text-secondary-light">About Contents</div>
+                            <div
+                              class="fill-current arrow-rotation group-focus:-rotate-180"
+                            >
+                              <!-- Down Arrow -->
+                              <svg
+                                width="16"
+                                height="20"
+                                viewBox="0 0 16 20"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <!-- Tab Inner Content -->
+                          <div class="drop-menu group-focus:max-h-screen max-h-0">
+                            <a class="drop-menu-items" href="#">A section</a>
+                            <a class="drop-menu-items" href="#">B section</a>
+                            <a class="drop-menu-items" href="#">C section</a>
+                          </div>
+                        </div>
+                        <!-- Tab 3 -->
+                        <div class="menu-item h-auto group" tabindex="0">
+                          <!-- Tab button -->
+                          <div class="menu-link" id="menu-collapse">
+                            <div class="font-bold text-lg text-secondary-light">About Contents</div>
+                            <div
+                              class="fill-current arrow-rotation group-focus:-rotate-180"
+                            >
+                              <!-- Down Arrow -->
+                              <svg
+                                width="16"
+                                height="20"
+                                viewBox="0 0 16 20"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <!-- Tab Inner Content -->
+                          <div class="drop-menu group-focus:max-h-screen max-h-0">
+                            <a class="drop-menu-items" href="#">A section</a>
+                            <a class="drop-menu-items" href="#">B section</a>
+                            <a class="drop-menu-items" href="#">C section</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
         </div>
 
         <!-- Buttons -->
