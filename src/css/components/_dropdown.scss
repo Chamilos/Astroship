@@ -12,7 +12,7 @@
         }
 
         &-menu {
-            @apply static hidden z-[1000] min-w-52 px-4 py-1 lg:p-4 text-base text-gray-500 bg-light
+            @apply static hidden z-[1000] min-w-52 px-4 py-1 lg:p-4 text-base text-gray-500 bg-neutral-100 
             text-left list-none bg-clip-padding rounded-sm  border-solid border-light border top-full left-0  lg:absolute transition-all delay-300
         }
 
